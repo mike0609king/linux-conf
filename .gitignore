@@ -1,9 +1,8 @@
 *
 !.gitignore
 !.zshrc
-!/.oh-my-zsh/
 !.gitconfig
 !.tmux.conf
 !/.vim
-!/powerlevel10k/
 !p10k.zsh
+!README.md
