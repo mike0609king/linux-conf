@@ -19,7 +19,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-#export ZSH="/home/visionofinfinity/.oh-my-zsh"
+# export ZSH="/home/mike0609king/.oh-my-zsh"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -146,10 +146,11 @@ fi
 ##################################################
 alias tmux='tmux -u' 	# so that the characters don't look weird
 
-alias vim='vim -u ~/.vim/vimrc'
+alias vim='vim -u ~/.vim/vim/vimrc'
 
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
 
