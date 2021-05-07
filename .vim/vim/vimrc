@@ -1,0 +1,178 @@
+" General configurations
+if has("syntax")
+  syntax on
+endif
+
+set nocompatible
+filetype plugin on
+filetype plugin indent on
+syntax enable
+syntax on
+set autoindent
+set belloff=all
+set showcmd				" Show (partial) command in status line.
+set showmatch				" Show matching brackets.
+set ignorecase				" Do case insensitive matching
+" set smartcase				" Do smart case matching
+set incsearch				" Incremental search -> while searching you get the results
+set autowrite				" Automatically save before commands like :next and :make
+set mouse=a				" Enable mouse usage (all modes)
+set ttymouse=sgr  " mouse interaction in alacritty
+set path+=** 				" searches in the folders if I use :find
+set wildmenu 				" uses a menu so that I can select the file if I use <tab> for completion in
+					" :find and more than one file has been found
+set guifont=Consolas:h15		" changes the guifont
+set relativenumber			" sets relative numbers
+set number				" sets number at the current line
+set clipboard=unnamedplus		" activates clipboard ?
+set autoread				" ? 
+"set wrap linebreak
+"set shortmess+=c			" the autocomplete messages won't show below (completion Plugin)
+set hidden
+set nowrap 				" code can go down go out of screen
+let mapleader=" "
+set encoding=utf-8
+set backspace=indent,eol,start 		" removing the restriction of the backspace so that it it is possible to delete previously entered code
+
+" On pressing tab, insert 2 spaces
+set expandtab
+" show existing tab with 2 spaces width
+set tabstop=2
+set softtabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+
+" my universal mapping
+nnoremap ,unfold :set foldlevel=100<cr>	
+nnoremap ,all ggvg
+nnoremap ,clear ggVGx
+nnoremap ,ecmd :!clear<cr>
+nnoremap <leader>h :wincmd h<cr> 		" switch windows 
+nnoremap <leader>j :wincmd j<cr> 		" switch windows
+nnoremap <leader>k :wincmd k<cr> 		" switch windows
+nnoremap <leader>l :wincmd l<cr> 		" switch windows 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"     Windows Copy
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" copy (write) highlighted text to .vimbuffer
+" vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+" paste from buffer
+" map <C-v> :r ~/.vimbuffer<CR>
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"     Linux Copy
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+inoremap <C-v> <ESC>"+pa
+vmap <C-c> "+y
+
+nnoremap <silent><leader>= :vertical resize +5<cr> 	" resize the vertical window (+)
+nnoremap <silent><leader>- :vertical resize -5<cr> 	" resize the vertical window (-)
+" spelling mappings
+nnoremap ,seteng :set spell spelllang=en_us<cr>
+nnoremap ,setger :set spell spelllang=de<cr>
+nnoremap ,setnosp :set nospell<cr>
+
+" C++ settings
+"
+" setup for c++ compilation
+autocmd filetype cpp nnoremap <F5> :w <bar>!g++ -Wshadow -Wextra -Wall "%" -o "%:r" -g -fsanitize=address -D DEBUG -fsanitize=undefined<cr>
+autocmd filetype cpp nnoremap <F4> :w <bar>!./"%:r"<cr>
+autocmd filetype cpp nnoremap ,run :w <bar>!./"%:r"<cr>
+" C++ snippets mappings
+autocmd filetype cpp nnoremap ,usamain :-1read /home/mike0609king/.vim/vim/snippets/C++/USACO_main.cpp<cr>2jA
+autocmd filetype cpp nnoremap ,main :-1read /home/mike0609king/.vim/vim/snippets/C++/standard_main.cpp<cr>4jA
+autocmd filetype cpp nnoremap ,debug :-1read /home/mike0609king/.vim/vim/snippets/C++/Debug.cpp<cr>
+
+
+" Python settings
+"
+" setup for python compilation
+autocmd filetype python nnoremap <F4> :w<bar>:!python3 "%"<cr>
+autocmd filetype python nnoremap <F3> :w<bar>:vertical botright term python3 -i %<cr>
+
+" Plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'neoclide/coc.nvim',{'branch':'release'}
+Plug 'preservim/nerdtree'
+Plug 'morhetz/gruvbox'
+Plug 'mbbill/undotree'
+Plug 'vim-latex/vim-latex'
+
+call plug#end()
+
+" coc configurations
+" extentions
+" remove: CocUninstall <extention-name>
+"\ 'coc-python',
+let g:coc_global_extensions = [
+	\ 'coc-pairs',
+	\ 'coc-eslint',
+	\ 'coc-json',
+	\]
+
+" completely disable coc for certain files
+ autocmd filetype cpp set runtimepath-=~/.vim/plugged/coc.nvim
+" autocmd filetype python set runtimepath-=~/.vim/plugged/coc.nvim
+" autocmd filetype tex set runtimepath-=~/.vim/plugged/coc.nvim
+
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+" navigation in the completion list with <Tab> and <S-Tab>
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()							" navigation with <Tab>
+inoremap <silent><expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"	" navigation with <S-Tab>
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"		" confirm completion with <cr> (space) 
+" GoTo code navigation 
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" gruvbox(color scheme) configurations
+colorscheme gruvbox
+let g:gruvbox_guisp_fallback="bg"
+set background=dark
+
+" nerdtree configurations
+nnoremap <C-n> :NERDTreeToggle<bar>:set relativenumber<cr> 		" shortcut to open nerdtree
+
+" undotree configurations
+nnoremap <C-u> :UndotreeToggle<cr>
+if has("persistent_undo")
+	set undodir=$HOME."/.undodir"
+	set undofile
+endif
+
+" LaTeX settings
+set grepprg=grep\ -nH\ $*	" recommended from website
+let g:tex_flavor='latex' 	" recommended from website
+let g:Imap_FreezeImap=1		" no auto mapping from which I dont know...
+autocmd filetype tex set wm=2	" sets a wrap margin of 2 characters from the right window border
+autocmd filetype tex setlocal indentexpr=
+" LaTeX mappings
+autocmd filetype tex nnoremap <F5> :w <bar>:!pdflatex "%"<cr>
+autocmd filetype tex nnoremap <F4> :w <bar>:!pdflatex "%"<cr>
+autocmd filetype tex nnoremap ,open :!okular "%:r".pdf & <cr>
+autocmd filetype tex nnoremap ,S /<++><cr>
+autocmd filetype tex nnoremap ,n /<++><cr>cw
+autocmd filetype tex set spell
+autocmd filetype tex set spell spelllang=en_us
+" mapping special characters
+autocmd filetype tex inoremap \"o ö
+autocmd filetype tex inoremap \"u ü
+autocmd filetype tex inoremap \"a ä
+autocmd filetype tex inoremap \ss ß
+autocmd filetype tex inoremap \"O Ö autocmd filetype tex inoremap \"U Ü
+autocmd filetype tex inoremap \"A Ä
+
+" Latex snippets mappings
+autocmd filetype tex nnoremap ,main :-1read /home/mike0609king/.vim/vim/snippets/LaTeX/main.tex <bar> :!cp -r /home/mike0609king/.vim/vim/snippets/LaTeX/myDefaultPackageSetup/ . && chmod -R +w myDefaultPackageSetup<cr><cr>
+autocmd filetype tex nnoremap ,commentline :-1read /home/mike0609king/.vim/vim/snippets/LaTeX/commentLine.tex<cr>jA
+

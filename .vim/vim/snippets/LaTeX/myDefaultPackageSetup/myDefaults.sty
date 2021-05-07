@@ -1,0 +1,120 @@
+\ProvidesPackage{myDefaults}
+\RequirePackage{newclude}
+\RequirePackage[stable]{footmisc}% for footers to be able to be in the section heading
+\RequirePackage[ngerman]{babel}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[margin=1.in]{geometry}
+\RequirePackage[table]{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{amssymb,amsmath,amsthm}
+\RequirePackage{scrextend}
+\RequirePackage{graphicx}
+\RequirePackage{enumitem}
+\RequirePackage{hyperref}
+\RequirePackage{array}
+\RequirePackage{listings}
+\RequirePackage{longtable}
+\RequirePackage{booktabs}
+\RequirePackage{multirow}
+\RequirePackage{tcolorbox}
+\RequirePackage{mathtools}
+\RequirePackage{esvect} % loads \vv (vector over multiple letters)
+ 
+% to avoid spacing between the items of the itemize and enumerate environments
+\setitemize{topsep=0pt,parsep=3pt,partopsep=0pt,itemsep=3pt}
+\setenumerate{topsep=0pt,parsep=5pt,partopsep=0pt,itemsep=3pt}
+
+% I don't want \tag to show parenthesis
+\newtagform{noparen}{}{}
+\usetagform{noparen}
+
+% the topsep is there to reverse the parsep-effect
+\newenvironment{itemizeIndent}
+{\begin{itemize}[topsep=-2pt]}
+{\end{itemize}}
+
+\graphicspath{{./image/}}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan,
+}
+
+% colors
+\definecolor{blue-green}{rgb}{0.0, 0.87, 0.87}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{red-brownish}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{turquoise}{rgb}{0,153,154}
+
+% for arrows
+\newcommand{\overarrow}[1]{$\overset{#1}{\rightarrow}${ }}
+\newcommand{\arrow}{$\rightarrow${ }}
+\newcommand{\arrowF}{\overarrow{F}} % follows
+\newcommand{\arrowD}{\overarrow{D}} % defined as
+\newcommand{\arrowB}{\overarrow{B}} % example
+\newcommand{\arrowK}{\overarrow{K}} % Comment
+\newcommand{\arrowsF}{\overarrow{sF}} % should Follow
+\newcommand{\arrowA}{$\overset{A}\leftrightarrow${ }}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fonts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\txtrm}[1]{\textrm{#1}}
+\newcommand{\txtsf}[1]{\textsf{#1}}
+\newcommand{\txttt}[1]{\texttt{#1}}
+\newcommand{\txtmd}[1]{\textmd{#1}}
+\newcommand{\txtbf}[1]{\textbf{#1}}
+\newcommand{\txtit}[1]{\textit{#1}}
+\newcommand{\txtup}[1]{\textup{#1}}
+\newcommand{\txtsl}[1]{\textsl{#1}}
+\newcommand{\txtsc}[1]{\textsc{#1}}
+%\renewcommand{\emph}[1]{}
+
+% my own highlighting/emphasizing  fonts
+\newcommand{\txtemph}[1]{\txtbf{#1}}
+
+% table font
+\newcommand{\txttH}[1]{\textbf{#1}}
+% item font (in enumitem and itemize)
+\newcommand{\txtItem}[1]{\txtbf{#1}}% if there it an item and then a description of it (\item <something>: Description/Specification)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcolumntype{\p}[1]{p{#1\textwidth}}
+\newcolumntype{\pc}[1]{>{\centering\arraybackslash}p{#1\textwidth}}
+\newcolumntype{\pr}[1]{>{\raggedright\arraybackslash}p{#1\textwidth}}
+\newcolumntype{\pl}[1]{>{\raggedleft\arraybackslash}p{#1\textwidth}}
+\newcolumntype{\m}[1]{m{#1\textwidth}}
+\newcolumntype{\mc}[1]{>{\centering\arraybackslash}m{#1\textwidth}}
+\newcolumntype{\mr}[1]{>{\raggedright\arraybackslash}m{#1\textwidth}}
+\newcolumntype{\ml}[1]{>{\raggedleft\arraybackslash}m{#1\textwidth}}
+\newcolumntype{\b}[1]{b{#1\textwidth}}
+\newcolumntype{\bc}[1]{>{\centering\arraybackslash}b{#1\textwidth}}
+\newcolumntype{\br}[1]{>{\raggedright\arraybackslash}b{#1\textwidth}}
+\newcolumntype{\bl}[1]{>{\raggedleft\arraybackslash}b{#1\textwidth}}
+
+\newcommand{\breakT}{\\ \hline}%break line
+
+% first Parameter: tablespec
+\newenvironment{tab}[1]
+{\begin{center}\begin{longtable}{#1}}
+{\end{longtable}\end{center}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Box around something
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Merkkasten
+\newenvironment{memoryBox}
+{\begin{center}\begin{tcolorbox}[width=0.7\textwidth]}
+{\end{tcolorbox}\end{center}}
+
+\newenvironment{memoryBoxTitle}[1]
+{\begin{center}\begin{tcolorbox}[width=0.7\textwidth,title=#1]}
+{\end{tcolorbox}\end{center}}
