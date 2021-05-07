@@ -3,6 +3,8 @@
 !.zshrc
 !.gitconfig
 !.tmux.conf
-!/.vim
-!p10k.zsh
+!.vim/
 !README.md
+!.config/i3
+!.config/polybar
+!.config/alacrity

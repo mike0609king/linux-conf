@@ -80,6 +80,17 @@ source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source $ZSH/oh-my-zsh.sh
 
+##################################################
+# 	Load Powerline
+##################################################
+#if [ -f `which powerline-daemon` ]; then
+#    powerline-daemon -q
+#    POWERLINE_BASH_CONTINUATION=1
+#    POWERLINE_BASH_SELECT=1
+#fi
+#if [ -f /usr/local/lib/python3.8/dist-packages/powerline/bindings/bash/powerline.sh ]; then
+#    source /usr/local/lib/python3.8/dist-packages/powerline/bindings/bash/powerline.sh
+#fi
 
 ########################################################################################################
 # 						User configuration
@@ -132,6 +143,12 @@ else
   export EDITOR='mvim'
 fi
 
+
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+TERMINAL=alacritty
+
+export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -139,7 +156,13 @@ fi
 # 	Plugin Configurations
 ##################################################
 # zsh-autosuggestions configuration
- bindkey '^ ' autosuggest-accept
+bindkey '^ ' autosuggest-accept
+
+##################################################
+# 	Changing keybinding for Vim
+##################################################
+
+setxkbmap -option caps:escape
 
 ##################################################
 # 	Aliases
@@ -153,4 +176,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+export media='/media/mike0609king/'
+export data='/media/mike0609king/DATA/'
 
