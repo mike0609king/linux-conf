@@ -11,7 +11,8 @@ def_key "mouse"
 def_key "k"
   scroll_up
 
-def_key "shift-up"
+# vim!
+def_key "K"
   select_item
   scroll_up
 
@@ -19,7 +20,8 @@ def_key "shift-up"
 def_key "j"
   scroll_down
 
-def_key "shift-down"
+# vim!
+def_key "J"
   select_item
   scroll_down
 
@@ -231,11 +233,11 @@ def_key "#"
 def_key "Z"
   shuffle
 
-def_key "x"
+def_key "X"
   toggle_crossfade
 
-def_key "X"
-  set_crossfade
+#def_key "X"
+#  set_crossfade
 
 def_key "u"
   update_database

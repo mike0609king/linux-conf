@@ -1,15 +1,16 @@
 #vim: filetype=conf
 
 # Host 
-mpd_host = "127.0.0.1"
+#mpd_host = "127.0.0.1"
 
 # Directories
 ncmpcpp_directory = "~/.config/ncmpcpp"
-#lyrics_directory = "~/.local/share/lyrics"
+lyrics_directory = "~/.config/ncmpcpp"
 mpd_music_dir = "/media/mike0609king/DATA/Music"
 
 # Visualizer 
 visualizer_fifo_path = "/tmp/mpd.fifo"
+#visualizer_data_source = "tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
 visualizer_sync_interval = "60"
 visualizer_in_stereo = "yes"
@@ -18,6 +19,10 @@ visualizer_look = "◆▋"
 #visualizer_look = "+|"
 
 message_delay_time = "1"
+
+# Searching
+system_encoding = "utf-8"
+regular_expressions = "extended"
 
 # Library tag
 #media_library_primary_tag = album_artist
@@ -57,8 +62,6 @@ empty_tag_color = magenta
 # Song List 
 song_columns_list_format = "(45)[green]{t} (10)[blue]{l}  (25)[magenta]{a} (20)[yellow]{b}"
 song_list_format = "{$7%a - $9}{$5%t$9}|{$5%f$9}$R{$6%b $9}{$3%l$9}"
-#song_status_format = $b{{$8"%t"}} $3by {$4%a{ $3in $7%b{ (%y)}} $3}|{$8%f}
-#song_library_format = {%n - }{%t}|{%f}
 
 # Current Item
 current_item_prefix = $(cyan)$r$b
