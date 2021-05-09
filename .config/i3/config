@@ -248,6 +248,10 @@ mode $mode3 {
   bindsym c exec chromium
   # start bazecor
   bindsym b exec /media/mike0609king/DATA/Apps/Bazecor/Bazecor
+  # start file manager GUI
+  bindsym $mod+e exec thunar
+  # start Settings
+  bindsym $mod+i exec gnome-control-center
   
   # Transition to other modes
 	bindsym Escape mode "default"

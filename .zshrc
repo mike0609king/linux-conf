@@ -16,7 +16,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 ##################################################
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/media/mike0609king/DATA/Apps:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 # export ZSH="/home/mike0609king/.oh-my-zsh"
@@ -165,17 +165,31 @@ bindkey '^ ' autosuggest-accept
 setxkbmap -option caps:escape
 
 ##################################################
-# 	Aliases
+### 	             Aliases                     ###
 ##################################################
-alias tmux='tmux -u' 	# so that the characters don't look weird
 
-alias vim='vim -u ~/.vim/vim/vimrc'
+#############################
+#          Commands         #
+#############################
 
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-export media='/media/mike0609king/'
-export data='/media/mike0609king/DATA/'
+#############################
+#      Special Dir          #
+#############################
+export media='/media/mike0609king'
+export data='/media/mike0609king/DATA'
+export apps='/media/mike0609king/DATA/Apps'
 
+#############################
+#         Programs          #
+#############################
+alias tmux='tmux -u' 	# so that the characters doesn't look weird
+alias vim='vim -u ~/.vim/vim/vimrc' # loading rc files correctly
+alias mon2cam='deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts'
+alias Discord='$apps/Discord/Discord'
+alias ffmpeg='$apps/ffmpeg/ffmpeg'
+alias Bazecor='$apps/Bazecor'
