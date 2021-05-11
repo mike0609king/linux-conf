@@ -1,0 +1,9 @@
+# vim: filetype=conf
+
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+map i recolor
+map u scroll half_up
+map u scroll half_down
+map J zoom out
+map K zoom in 
