@@ -42,7 +42,7 @@ set $bg /media/mike0609king/DATA/Pictures/Hintergrund/CuteGirl1.jpg
 ####################################################################
 
 # gaps
-smart_gaps on
+# smart_gaps on
 smart_borders on
 gaps inner $inner_gaps
 gaps outer $outer_gaps
@@ -100,10 +100,10 @@ bindsym $mod+k exec --no-startup-id dmenu_run
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+h split v
 
 # split in vertical orientation
-bindsym $mod+j split v
+bindsym $mod+j split h
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -112,6 +112,9 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+t layout tabbed
 bindsym $mod+n layout toggle split
+
+# lock the screen
+bindsym $mod+l exec i3lock
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -199,6 +202,7 @@ mode $mode1{
 	bindsym i mode "default"
 	bindsym $mod+r mode $mode2
   bindsym $mod+o mode $mode3
+  bindsym $mod+m mode $mode4
 }
 bindsym $mod+space mode $mode1
 
@@ -229,6 +233,7 @@ mode $mode2 {
 	bindsym i mode "default"
   bindsym $mod+space mode $mode1
   bindsym $mod+o mode $mode3
+  bindsym $mod+m mode $mode4
 }
 bindsym $mod+r mode $mode2
 
@@ -258,8 +263,49 @@ mode $mode3 {
 	bindsym i mode "default"
   bindsym $mod+space mode $mode1
   bindsym $mod+r mode $mode2
+  bindsym $mod+m mode $mode4
 }
 bindsym $mod+o mode $mode3
+
+# making screenshots like I would in google
+bindsym $mod+Shift+s exec flameshot gui
+
+####################################################################
+####                         Music Mode                         ####
+####################################################################
+# Those are the shortcurts that can be used to control mdp. I      #
+# "implemented" some basic shortcurts using mpc                    #
+####################################################################
+set $mode4 "music"
+mode $mode4 {
+  # pause and start
+  bindsym p exec mpc toggle
+  # stop
+  bindsym s exec mpc stop
+  # next
+  bindsym Shift+period exec mpc next
+  # previous
+  bindsym Shift+comma exec mpc prev
+  # Volum up/down
+  bindsym equal exec mpc volume +2
+  bindsym minus exec mpc volume -2
+  # random mode on/off
+  bindsym z exec mpc random
+  # single mode on/off (loop)
+  bindsym y exec mpc single
+  # shuffle
+  bindsym Shift+z exec mpc shuffle
+  # crossfade
+  bindsym Shift+x exec mpc crossfade
+
+  # Transition to other modes
+  bindsym Escape mode "default"
+  bindsym i mode "default"
+  bindsym $mod+space mode $mode1
+  bindsym $mod+r mode $mode2
+  bindsym $mod+o mode $mode3
+}
+bindsym $mod+m mode $mode4
 
 ####################################################################
 ####                     Start at beginning                     ####
@@ -270,4 +316,3 @@ bindsym $mod+o mode $mode3
 exec_always feh --bg-scale $bg
 exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
