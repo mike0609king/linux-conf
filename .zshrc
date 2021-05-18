@@ -136,11 +136,14 @@ export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
+export vimPath='/usr/bin/vim -u ~/.vim/vim/vimrc'
+
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
-else
-  export EDITOR='mvim'
+else # local
+  #export EDITOR='mvim'
+  export EDITOR=$vimPath
 fi
 
 
@@ -188,7 +191,8 @@ export apps='/media/mike0609king/DATA/Apps'
 #         Programs          #
 #############################
 alias tmux='tmux -u' 	# so that the characters doesn't look weird
-alias vim='vim -u ~/.vim/vim/vimrc' # loading rc files correctly
+#alias vim='vim -u ~/.vim/vim/vimrc' # loading rc files correctly
+alias vim=$vimPath # loading rc files correctly
 alias mon2cam='deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts'
 alias Discord='$apps/Discord/Discord'
 alias DiscordScreen='python $apps/discord-monitors-to-vc/main.py'

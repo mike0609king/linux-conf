@@ -3,6 +3,8 @@
 *.log
 *.pid
 
+.png # tmp for flameshot
+
 Desktop/
 fonts/
 Music/
