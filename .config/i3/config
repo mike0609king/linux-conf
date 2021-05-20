@@ -100,10 +100,10 @@ bindsym $mod+k exec --no-startup-id dmenu_run
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # split in horizontal orientation
-bindsym $mod+h split v
+bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+j split h
+bindsym $mod+j split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -190,12 +190,22 @@ mode $mode1{
   bindsym t layout tabbed
   bindsym n layout toggle split
 
+  # split in horizontal orientation
+  bindsym $mod+h split h
+
+  # split in vertical orientation
+  bindsym $mod+j split v
+
   # toggle tiling / floating
   bindsym space floating toggle
   # change focus between tiling / floating windows
   bindsym c focus mode_toggle
   # focus the parent container
   bindsym a focus parent
+
+  # transparency
+  bindsym v exec ~/.config/i3/scripts/comptonToggle.sh
+  #bindsym v exec compton
 
 	# Transition to other modes
 	bindsym Escape mode "default"
