@@ -35,7 +35,7 @@ set $outer_gaps 10
 set $term --no-startup-id $HOME/.cargo/bin/alacritty
 
 # background 
-set $bg /media/mike0609king/DATA/Pictures/Hintergrund/CuteGirl1.jpg
+set $bg "/media/mike0609king/DATA/Pictures/Hintergrund/Reine Murasame.jpg"
 
 ####################################################################
 ####                  Some "Basic" Initialisations              ####

@@ -179,4 +179,11 @@ autocmd filetype tex nnoremap ,bmain :-1read $HOME/.vim/vim/snippets/LaTeX/bmain
 " tex
 autocmd filetype sh nnoremap <F5> :w<bar>:!./"%"<cr>
 
-
+" mapping special characters for note
+autocmd filetype note inoremap \"o ö
+autocmd filetype note inoremap \"u ü
+autocmd filetype note inoremap \"a ä
+autocmd filetype note inoremap \ss ß
+autocmd filetype note inoremap \"O Ö 
+autocmd filetype note inoremap \"U Ü
+autocmd filetype note inoremap \"A Ä
