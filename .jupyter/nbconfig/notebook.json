@@ -1,0 +1,19 @@
+{
+  "load_extensions": {
+    "vim_binding/vim_binding": false,
+    "nbextensions_configurator/config_menu/main": true,
+    "contrib_nbextensions_help_item/main": true,
+    "jupyter-vim-binding/vim_binding": true,
+    "toc2/main": true,
+    "jupyter-js-widgets/extension": true
+  },
+  "keys": {
+    "command": {
+      "bind": {
+        "ctrl-1": "jupyter-notebook:change-cell-to-code",
+        "m": "jupyter-notebook:change-cell-to-markdown",
+        "y": "jupyter-notebook:change-cell-to-code"
+      }
+    }
+  }
+}

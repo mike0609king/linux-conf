@@ -16,7 +16,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 ##################################################
 
 # If you come from bash you might have to change your $PATH.
-export PATH=/media/mike0609king/DATA/Apps:$HOME/bin:/usr/local/bin:$PATH
+export PATH=/$HOME/.local/bin:/media/mike0609king/DATA/Apps:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 # export ZSH="/home/mike0609king/.oh-my-zsh"
@@ -136,7 +136,7 @@ export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
-export vimPath='/usr/bin/vim -u ~/.vim/vim/vimrc'
+export vimPath='nvim -u ~/.vim/vim/vimrc'
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -162,9 +162,10 @@ export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 bindkey '^ ' autosuggest-accept
 
 ##################################################
-# 	Changing keybinding for Vim
+# 	      Other: At start of bash              ###
 ##################################################
 
+# Changing keybinding
 setxkbmap -option caps:escape
 
 ##################################################
@@ -179,6 +180,8 @@ setxkbmap -option caps:escape
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias serve='browser-sync start --server --files . --no-notify -- host `hostname -I` --port 9000'
+
 
 #############################
 #      Special Dir          #
@@ -193,9 +196,12 @@ export apps='/media/mike0609king/DATA/Apps'
 alias tmux='tmux -u' 	# so that the characters doesn't look weird
 #alias vim='vim -u ~/.vim/vim/vimrc' # loading rc files correctly
 alias vim=$vimPath # loading rc files correctly
+alias mvim=$vimPath
+export CALCURSE_EDITOR=$vimPath
 alias mon2cam='deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts'
 alias Discord='$apps/Discord/Discord'
 alias DiscordScreen='python $apps/discord-monitors-to-vc/main.py'
 alias ffmpeg='$apps/ffmpeg/ffmpeg'
 alias Bazecor='$apps/Bazecor'
 alias notify='~/.myScripts/notify.sh'
+alias calcurse='calcurse -D ~/.config/calcurse'

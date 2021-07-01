@@ -49,14 +49,21 @@ Videos/
 .cache/
 .oh-my-zsh/
 .mozilla/
+.lazarus
+.grip
+.dead.letter
+.bash_history
 
 test/
+tmp/
 
 .vim/autoload/
 .vim/plugged/
 
 .config/BAZECOR/
 .config/Mousepad
+.config/QtProject.conf
+.config/Dogecoin/
 .config/Thunar/
 .config/chromium/
 .config/coc/
@@ -80,10 +87,18 @@ test/
 .config/user-dirs.locale
 .config/pulse/
 .config/qt5ct
-.config/qterminal.org/
-.config/ristretto/
+.config/qterminal.org
+.config/ristretto
 .config/wireshark
 .config/xfce4
+.config/vlc
+.config/vimb
+.config/ranger/plugins
+.config/ranger/__pycache__
+
+.config/calcurse/notes
 
 .config/mpd/mpdstate
+
+snap
 

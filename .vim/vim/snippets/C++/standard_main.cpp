@@ -32,12 +32,6 @@ void _print(T const& t, V const&... v){__print(t); if (sizeof...(v)) cerr<< ", "
 #define deb(x...)
 #endif
 
-
-
-void readAndInit(){
-
-}
-
 void solve(){
 
 }

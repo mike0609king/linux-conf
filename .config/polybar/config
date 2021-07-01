@@ -67,7 +67,7 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = DejaVuSansMono Nerd Font Mono
+font-3 = DejaVuSansMono Nerd Font Mono:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = mpd
@@ -182,15 +182,16 @@ label-urgent-padding = 2
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+;format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = [<label-song>] 
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+icon-prev = <
+icon-stop = S
+icon-play = Pl
+icon-pause = Pu
+icon-next = >
 
-label-song-maxlen = 25
+label-song-maxlen = 200
 label-song-ellipsis = true
 
 [module/xbacklight]
