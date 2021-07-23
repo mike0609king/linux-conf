@@ -35,7 +35,7 @@ set $outer_gaps 10
 set $term --no-startup-id $HOME/.cargo/bin/alacritty
 
 # background 
-set $bg "/media/mike0609king/DATA/Pictures/Hintergrund/Reine Murasame.jpg"
+set $bg "/media/mike0609king/DATA/Pictures/Hintergrund/capppptturreesdfd.PNG"
 
 ####################################################################
 ####                  Some "Basic" Initialisations              ####
@@ -169,6 +169,12 @@ mode $mode1{
   bindsym Shift+8 move container to workspace number $ws8
   bindsym Shift+9 move container to workspace number $ws9
   bindsym Shift+0 move container to workspace number $ws10
+
+  # move workspace between monitors
+  bindsym Control+l move workspace to output right
+  bindsym Control+h move workspace to output left
+  bindsym Control+j move workspace to output down
+  bindsym Control+k move workspace to output up
 
   # change focus
   bindsym h focus left
@@ -329,5 +335,5 @@ exec_always feh --bg-scale $bg
 # two screens
 exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off
 # one screen
-#exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output HDMI-2 --off
+# exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output HDMI-2 --off
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

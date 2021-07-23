@@ -49,7 +49,15 @@ nnoremap ,ecmd :!clear<cr>
 nnoremap <leader>h :wincmd h<cr> 		" switch windows 
 nnoremap <leader>j :wincmd j<cr> 		" switch windows
 nnoremap <leader>k :wincmd k<cr> 		" switch windows
+
 nnoremap <leader>l :wincmd l<cr> 		" switch windows 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                    Fix of cursor in vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let &t_SI = "\<esc>[5 q"
+let &t_SR = "\<esc>[5 q"
+let &t_EI = "\<esc>[2 q"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "     Windows Copy
