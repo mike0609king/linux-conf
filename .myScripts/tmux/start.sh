@@ -8,6 +8,7 @@ run="$session:1"
 music="$session:2"
 time1="$session:3"
 time2="$session:4"
+gaomon="$session:5"
 
 # Making the session
 tmux -2 new -d -s "$session"
@@ -28,8 +29,12 @@ tmux split-window -t "$time1.{bottom}"    -h -p 60    -d 'cd ~/.myScripts/calcur
 # Window for Time2
 tmux new-window -t "$time2" -n 'Time2' "cd ~/.config/calcurse/notes;zsh" || exit
 
+# Window for gaomon
+tmux new-window -t "$gaomon" -n 'Gaomon' "cd $apps/OpenTabletDriver;zsh" || exit
+
 #tmux select-window -t "$run"
 tmux select-window -t "$time1.{top}"
+
 
 # Attach to session
 tmux -2 attach-session -t "$session"

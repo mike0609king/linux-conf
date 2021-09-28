@@ -137,7 +137,7 @@ export LC_TIME="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
 export vimPath='vim -u ~/.vim/vim/vimrc'
-#export vimPath='nvim -u ~/.vim/vim/vimrc'
+export nvimPath='nvim -u ~/.vim/vim/vimrc'
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -196,6 +196,7 @@ export apps='/media/mike0609king/DATA/Apps'
 #############################
 alias tmux='tmux -u' 	# so that the characters doesn't look weird
 alias vim=$vimPath # loading rc files correctly
+alias nvim=$nvimPath # loading rc files correctly
 alias mvim=$vimPath
 export CALCURSE_EDITOR=$vimPath
 alias mon2cam='deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts'

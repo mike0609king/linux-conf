@@ -17,8 +17,8 @@ Plug 'SirVer/ultisnips'
 
 " Looks of vim
 Plug 'morhetz/gruvbox'
- Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color' " display colors
 
 call plug#end()
@@ -147,8 +147,8 @@ nnoremap <leader>n :NERDTreeToggle<bar>:set relativenumber<cr>
 " ################################################
 " #            airline configurations            #
 " ################################################
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts = 1
 
 function! JumpToCSS()
   let id_pos = searchpos("id", "nb", line('.'))[1]

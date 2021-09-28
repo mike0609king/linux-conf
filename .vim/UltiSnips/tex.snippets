@@ -128,3 +128,13 @@ endsnippet
 snippet href
 	\\href{${1}}{${2}} ${0}
 endsnippet
+snippet minipage "minipage env"
+\\begin{minipage}{${1:0.5}\textwidth}
+	${0:${VISUAL}}
+\\end{minipage}
+endsnippet
+snippet frame "frame env"
+\\begin{frame}{${1:}}
+	${0:${VISUAL}}
+\\end{frame}
+endsnippet
