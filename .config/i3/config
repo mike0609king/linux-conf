@@ -29,13 +29,13 @@ set $ws10 "10"
 
 # Definitions for gaps
 set $inner_gaps 10
-set $outer_gaps 10
+set $outer_gaps 0
 
 #set $term --no-startup-id i3-sensible-terminal
-set $term --no-startup-id $HOME/.cargo/bin/alacritty
+set $term --no-startup-id alacritty
 
 # background 
-set $bg "/media/mike0609king/DATA/Pictures/Hintergrund/HAseeeeee.PNG"
+set $bg "/home/mike0609king/Pictures/Wallpapers/1.jpg"
 
 ####################################################################
 ####                  Some "Basic" Initialisations              ####
@@ -210,8 +210,7 @@ mode $mode1{
   bindsym a focus parent
 
   # transparency
-  bindsym v exec ~/.config/i3/scripts/comptonToggle.sh
-  #bindsym v exec compton
+  bindsym v exec ~/.config/i3/scripts/picomToggle.sh
 
 	# Transition to other modes
 	bindsym Escape mode "default"
@@ -264,15 +263,15 @@ mode $mode3 {
   # start a terminal
   bindsym Return exec $term
   # start discord
-  bindsym d exec /media/mike0609king/DATA/Apps/Discord/Discord
+  bindsym d exec /home/mike0609king/Apps/Discord/Discord
   # start chromium
   bindsym c exec chromium
   # start bazecor
-  bindsym b exec /media/mike0609king/DATA/Apps/Bazecor/Bazecor
+  #bindsym b exec /media/mike0609king/DATA/Apps/Bazecor/Bazecor
   # start file manager GUI
   bindsym $mod+e exec thunar
   # start Settings
-  bindsym $mod+i exec gnome-control-center
+  #bindsym $mod+i exec gnome-control-center
   
   # Transition to other modes
 	bindsym Escape mode "default"
@@ -332,8 +331,11 @@ exec mpd
 
 # Starting when i3 Resets
 exec_always feh --bg-scale $bg
+exec_always xrandr -s 1920x1200
 # two screens
-#exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off
+# normal exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off
+exec xrandr --output Virtual1 --mode 1920x1072 --pos 0x0 --rotate normal --output Virtual2 --mode 1920x960 --pos 1920x0 --rotate normal --output Virtual3 --off --output Virtual4 --off --output Virtual5 --off --output Virtual6 --off --output Virtual7 --off --output Virtual8 --off
 # one screen
-exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output HDMI-2 --off
+#exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output HDMI-2 --off
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id /usr/bin/VBoxClient-all
