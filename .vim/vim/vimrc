@@ -32,6 +32,7 @@ set nowrap 				" code can go down go out of screen
 let mapleader=" "
 set encoding=utf-8
 set backspace=indent,eol,start 		" removing the restriction of the backspace so that it it is possible to delete previously entered code
+set noswapfile " no swap file is going to get created
 
 " On pressing tab, insert 2 spaces
 set expandtab
@@ -93,6 +94,7 @@ source ~/.vim/vim/myModules/buffers.vim
 
 source ~/.vim/vim/myModules/python.vim
 source ~/.vim/vim/myModules/cpp.vim
+source ~/.vim/vim/myModules/c.vim
 source ~/.vim/vim/myModules/tex.vim
 source ~/.vim/vim/myModules/sh.vim
 source ~/.vim/vim/myModules/note.vim

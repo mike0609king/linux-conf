@@ -31,12 +31,12 @@ call plug#end()
 " CocInstall coc-pyright
 "\ 'coc-python',
 " ################################################
+  "\ 'coc-vimtex',
 
 let g:coc_global_extensions = [
 	\ 'coc-pairs',
 	\ 'coc-eslint',
 	\ 'coc-json',
-  \ 'coc-vimtex',
   \ 'coc-python',
   \ 'coc-html',
   \ 'coc-css',

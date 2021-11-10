@@ -19,6 +19,9 @@ Downloads/
 linux-conf/
 Pictures/
 Videos/
+Apps/
+.screenlayout/
+.local/
 .ssh
 .viminfo
 .wget-hsts
@@ -53,6 +56,9 @@ Videos/
 .grip
 .dead.letter
 .bash_history
+.bash_profile
+.ipython/
+.npm/
 
 test/
 tmp/
@@ -60,10 +66,10 @@ tmp/
 .vim/autoload/
 .vim/plugged/
 
+# files in config
 .config/BAZECOR/
 .config/Mousepad
 .config/QtProject.conf
-.config/Dogecoin/
 .config/Thunar/
 .config/chromium/
 .config/coc/
@@ -95,8 +101,9 @@ tmp/
 .config/vimb
 .config/ranger/plugins
 .config/ranger/__pycache__
-
-.config/calcurse/notes
+.config/kconf_updaterc
+.config/kdeglobals 
+.config/pympress
 
 .config/mpd/mpdstate
 

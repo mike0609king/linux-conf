@@ -1,0 +1,85 @@
+# Plan für die Vorträge
+## Vortrag 1: Einstieg in Python [done]
+  - Motivation wieso sollte man zumindest etwas programmieren können
+    -> es wird angefangen python zu verstehen, da das für anfänger recht
+    gut geeignet ist
+  - Installation von Python
+  - Nutzen von VS Code oder von der Python IDLE
+  - Erklären, dass Python eine interpretierte Programmiersprache ist
+  - In der CMD Basics der Rechenoperationen zeigen
+  - Speichern der Daten in Variablen -> "Bezeichnung von Daten"
+  - Print-Funktion und Input-Funktion
+  - Nummerische Datentypen 
+  - Strings - Ein grobe Erklärung
+  - Strukturierung der Aufgaben und der Vortragsreihe
+  - Kommentare erklären
+  - Bezeichner Namen
+  - Grobe Einführung in das Thema Listen
+  - Logik
+## Vortrag 2: Kontrollstrukturen [done]
+  - If-elseif-else 
+  - While
+  - for 
+  -> Beispiele und Aufgaben
+  - Ein CMD Spiel Errate eine Zahl
+## Vortrag 3: Funktionen [done]
+  - Funktionen sollen vorgestellt werden
+  -> einige Aufgaben sollen bearbeitet werden
+  -> lokal und global
+  -> einige weitere interessante Funktionen, die nützlich sein können
+## Vortrag 4: Sequentielle Datentypen [done]
+  - Sequentielle Datentypen (es sind wirklich nur die Basics):
+    - list
+    - string
+    - Tuple
+  - Ein Decipher (mit shifts) mit Python schreiben
+## Vortrag 5: Andere Datentypen -> Anfang von Datentypen u. Algorithmik [done]
+  - Wörterbücher
+  - Set (so kurz wie möglich)
+  - Mutabel vs Immutabel
+  - Stack und Queue -> Modell vorstellen
+    -> Implementationen davon
+    -> Später nochmal darauf zurück kommen!!
+  -> relativ trocken...
+  - Noch zu machen: Aufgaben sollen noch erstellt werden
+## Vortrag 6: Think like a Programmer - Etwas mehr Algorithmik [done]
+  - Fizz Buzz implementieren
+  - gcd algorithmus erklären und implementieren lassen
+  - Sortier algorithmen
+    - Selber einen Sortier algorithmus implementieren
+    - Eingebauter sortier algorithmus
+  - Greedy Algorithmen Aufgaben
+  - Lineare und Binäre Suche
+    - Aufgaben
+      -> Errate eine Zahl Lösung so schnell wie möglich finden
+  - Rekursion
+    - gcd Berechnung
+  - !!!! Noch zu machen: Gemischte Aufgaben aufschreiben
+  - Am Ende des Vortrages soll nach wünschen gefragt werden!!!:
+    - Spieleprogrammieren
+    - Data Scraping
+    - Excel-Tabellen mit Python
+    - Algor
+    - andere Themen 
+
+## Vortrag 7: Implementation [done]
+  - Schere-Stein-Papier (mit rng)
+  - Hang-Man
+
+## Vortrag 8: Klassen und Clean Code [done]
+  - Nichts mehr als die Basics zeigen
+  -> Queue implementieren
+    -> weiter Führende Themen kurz ansprechen (Polymorphie)
+  - Clean Code
+  - "It's not enough for code to work." - Robert C. Martin
+    -> Basics von Clean Code erklären 
+  - Importieren von Bibliotheken
+
+## Vortrag 9: Mehr Mini-Spiele Programmieren
+  - Implementieren von Tic-Tac-Toc
+  - Implementieren von 4-Gewinnt
+  -> Vielleicht soll nur eins von dem beiden genutzt werden
+
+## TODO
+  - 4-Gewinnt implementieren
+  - Vorträge in einfache Blätter umformatieren

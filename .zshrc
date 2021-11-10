@@ -16,7 +16,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 ##################################################
 
 # If you come from bash you might have to change your $PATH.
-export PATH=/$HOME/.local/bin:/media/mike0609king/DATA/Apps:$HOME/bin:/usr/local/bin:$PATH
+export PATH=/$HOME/.local/bin:/home/mike0609king/Apps:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 # export ZSH="/home/mike0609king/.oh-my-zsh"
@@ -141,10 +141,10 @@ export nvimPath='nvim -u ~/.vim/vim/vimrc'
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nvim'
 else # local
   #export EDITOR='mvim'
-  export EDITOR=$vimPath
+  export EDITOR=$nvimPath
 fi
 
 
@@ -183,13 +183,11 @@ alias la='ls -A'
 alias l='ls -CF'
 alias serve='browser-sync start --server --files . --no-notify -- host `hostname -I` --port 9000'
 
-
 #############################
 #      Special Dir          #
 #############################
 export media='/media/mike0609king'
-export data='/media/mike0609king/DATA'
-export apps='/media/mike0609king/DATA/Apps'
+export apps='/home/mike0609king/Apps'
 
 #############################
 #         Programs          #
@@ -206,3 +204,7 @@ alias ffmpeg='$apps/ffmpeg/ffmpeg'
 alias Bazecor='$apps/Bazecor'
 alias notify='~/.myScripts/notify.sh'
 alias calcurse='calcurse -D ~/.config/calcurse'
+
+alias clang11='clang -Wall -std=c11 -lm'
+alias clang11Mem='clang -Wall -std=c11 -fsanitize=memory -lm'
+alias clang11Addr='clang -Wall -std=c11 -fsanitize=address -lm'

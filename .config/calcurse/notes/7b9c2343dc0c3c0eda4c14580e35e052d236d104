@@ -1,0 +1,23 @@
+# Zu ergaenzen
+  - sudo apt-get install mailutils
+  - calcurse 
+  - Vim ranger
+    -> install ueberzug
+  - bei installation von node.js
+    -> npm install -g browser-sync
+      -> for syncronising the HTML files with serve -> in the directory (in .zshrc)
+  - jupyter
+    - vim-binding (https://github.com/lambdalisue/jupyter-vim-binding)
+    - jupyter_contrib_nbextensions (https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
+      -> toc2 (jupyter_contrib_nbextensions/src/jupyter_contrib_nbextensions/nbextensions/toc2/)
+        -> already in there
+    - call
+        pip install ipywidgets
+        pip install --upgrade jupyterlab
+        jupyter labextension install @jupyter-widgets/jupyterlab-manager
+        jupyter labextension install jupyter-matplotlib
+        jupyter nbextension enable --py widgetsnbextension
+  - Pympress for presentations with LaTeX and notes!!! (https://github.com/Cimbali/pympress)
+  -> Refering to the following post: https://tex.stackexchange.com/questions/21777/is-there-a-nice-solution-to-get-a-presenter-mode-for-latex-presentations
+  - Gaomon support (https://github.com/OpenTabletDriver/OpenTabletDriver/)
+    -> enttweder mit package manager oder mit tar...

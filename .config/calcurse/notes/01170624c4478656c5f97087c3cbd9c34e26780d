@@ -1,0 +1,139 @@
+# Google Tabs
+  - pigeonhole-prinzip
+  - https://www.heise.de/developer/artikel/Mehr-besondere-Freunde-mit-std-map-und-std-unordered-map-4435976.html 
+  - https://de.wikipedia.org/wiki/Partitionsfunktion 
+  - https://en.wikipedia.org/wiki/Pairing_function 
+  - https://www.google.com/search?q=restringiert&rlz=1C1PRFI_enDE835DE835&oq=restringiert&aqs=chrome.0.0l7j69i61.2275j1j4&sourceid=chrome&ie=UTF-8 
+  - https://www.youtube.com/watch?v=GS1AYNO6T5E&list=PLmgXOD94Ug3U21l716Kmvgg6TAD_qaOVI&index=6 
+  - https://www.youtube.com/watch?v=WEDIj9JBTC8 
+  - https://www7.gogoanimehub.tv/category/k-seven-stories 
+  - https://gogoanime.sh/haiyoru-nyaruko-san-episode-3 
+  - https://www.amazon.com/Indisputable-Existence-Santa-Claus-ebook/dp/B01G96DPWS?\_encoding=UTF8&tag=stanupmath-20 → nice book
+
+- Music:
+  - https://www.youtube.com/watch?v=WDd46xev6Nk 
+- Chess:
+  - London System: https://www.youtube.com/watch?v=S_OYdWbJMKM&list=PLssNbVBYrGcCjajrI7QtQi48nKOfy-W5O
+  - Chess Middlegames: https://www.youtube.com/watch?v=jEehFvnO3ZA&list=PLssNbVBYrGcD2mB7JrHbpP5qyT_ncxCRj
+- PC setup:
+  - https://superuser.com/questions/1147320/how-to-change-keyboard-layout-in-i3 
+    -> changing keyboard layouts
+- Networks
+  - https://www.google.com/search?q=osi+model&sxsrf=ALeKk00iEvzwP6dzOc6NveOaRmWTQEfIag:1621017472828&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiGp5HV6MnwAhVo_7sIHcqpCvUQ_AUoAXoECAEQAw&biw=1880&bih=852#imgrc=vUWhHqcPgpU4wM
+    -> this shows the OSI model with examples
+- about Programming
+  - tabu search 
+  - DP on trees:
+    - https://www.youtube.com/watch?v=gj0zp--fBL8
+    - CSES
+    - https://www.commonlounge.com/discussion/8573ee40c4cb4673824c867715a5bc7b
+    - https://codeforces.com/blog/entry/63257
+    - https://codeforces.com/blog/entry/20935
+  - Trie:
+    - https://www.techiedelight.com/memory-efficient-trie-implementation-using-map-insert-search-delete/
+  - oeis
+  - https://cp-algorithms.com/algebra/binary-exp.html#:~:text=Binary%20exponentiation%20(also%20known%20as,required%20by%20the%20naive%20approach). → binary exponentiation
+  - https://codeforces.com/blog/entry/74684 → tipps on coding
+  - https://www.youtube.com/watch?v=fbYknr-HPYE → for making templates...
+  - https://contest.ioi-training.de/contestant/  
+  - http://wcipeg.com/wiki/Convex_hull_trick  
+  - https://www.youtube.com/watch?v=OrH2ah4ylv4
+  - https://www.youtube.com/watch?v=U4O3SwDamA4
+  - https://www.youtube.com/watch?v=wy4e_mXWxQ8
+  - https://www.youtube.com/watch?v=HnZKQJtGeHs 
+  - Dilworth theorem: https://en.wikipedia.org/wiki/Dilworth%27s_theorem
+  - Satz von Koenig: https://de.wikipedia.org/wiki/Satz_von_K%C3%B6nig_(Graphentheorie)
+  - Coordinate Compression
+  - Shortest and Longest path in a DAG: https://www.youtube.com/watch?v=TXkDpqjDMHA
+  - Math in CP: https://www.geeksforgeeks.org/math-in-competitive-programming/
+  - Segment tree: https://codeforces.com/blog/entry/22616 
+
+  - https://tikzit.github.io/ 
+  - https://github.com/ecnerwala/cp-book/tree/master/src → nice codes structures
+  - https://github.com/kth-competitive-programming/kactl/ → pdf summary about algorithms
+
+- About LaTeX:
+  - http://tex.world/grafik.pdf
+  - http://www.ict.nsc.ru/jspui/bitstream/ICT/1487/4/TikZ_List-Comand.pdf
+  - https://www.overleaf.com/learn/latex/Brackets_and_Parentheses 
+  - https://stackoverflow.com/questions/2739159/inserting-a-pdf-file-in-latex 
+  - https://texwelt.de/fragen/4140/wie-kann-ich-in-einer-tikz-zeichnung-einen-rechten-winkel-markieren 
+  - https://www.tug.org/TUGboat/tb29-1/tb91walczak.pdf 
+  - https://tex.stackexchange.com/questions/27651/symbol-about-not-orthogonality-in-latex 
+  - https://tex.stackexchange.com/questions/239510/labeling-a-point-using-tikz 
+  - https://tex.stackexchange.com/questions/116317/how-to-write-above-a-line-in-a-tikzpicture 
+  - https://tex.stackexchange.com/questions/51086/add-second-enumeration-item-on-the-same-line
+  - https://tex.stackexchange.com/questions/280815/how-to-write-two-subscripts-on-top-of-each-other-in-math-mode
+  - UML-Diagrams: http://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/pgf-umlcd/pgf-umlcd-manual.pdf
+  - Arrows in Tikz: https://latexdraw.com/exploring-tikz-arrows/
+  - Itemize in table: https://tex.stackexchange.com/questions/150492/how-to-use-itemize-in-table-environment
+  - Align equation left: https://tex.stackexchange.com/questions/145657/align-equation-left 
+  - Align minipage on the same height: https://tex.stackexchange.com/questions/81955/align-text-in-minipage-at-same-height 
+  - https://tex.stackexchange.com/questions/54561/how-to-remove-buttons-from-the-bottom-of-madrid-theme 
+  - https://tex.stackexchange.com/questions/247681/how-to-create-checkbox-todo-list 
+
+  - README und github:
+    - https://stackedit.io/app#
+    - https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
+
+  - Ethical Hacking:
+    - https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf 
+    - https://trailofbits.github.io/ctf/exploits/binary1.html
+    - https://www.youtube.com/watch?v=cFGJhn97e3s&list=PLmxT2pVYo5LB5EzTPZGfFN0c2GDiSXgQe&index=2
+    - https://www.bencode.net/blob/nasmcheatsheet.pdf 
+    - https://bart.disi.unige.it/zxgio/phd-course-2017/x86intro_slides.pdf 
+    - https://reverseengineering.stackexchange.com/questions/15774/crack-me-material
+    - https://medium.com/@Asm0d3us/1-crackmes-one-beginner-friendly-reversing-challenges-6df94ea6b29d
+    - https://techbeacon.com/security/reverse-engineering-attacks-6-tools-your-team-needs-know
+    - https://dev.to/pelock/top-10-reverse-engineering-tools-3ni3
+    - https://www.megabeets.net/a-journey-into-radare-2-part-1/
+    - https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
+    - Assembly gdb:
+      - https://www.retroreversing.com/tutorials/gdb-reversing
+      - http://www.yolinux.com/TUTORIALS/GDB-Commands.html
+  - Assembly:
+      - https://www.youtube.com/watch?v=vWlAg-pwMsM&list=PLan2CeTAw3pFOq5qc9urw8w7R-kvAT8Yb
+      - https://www.youtube.com/watch?v=VQAKkuLL31g&list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn
+      - https://www.youtube.com/watch?v=nNdAygFyvjY&list=PLmxT2pVYo5LB5EzTPZGfFN0c2GDiSXgQe&index=6
+      - https://www.youtube.com/playlist?list=PLKK11Ligqitg9MOX3-0tFT1Rmh3uJp7kA
+  - Linux:
+      - https://www.youtube.com/watch?v=aqvc9kYnz0U&list=PLShDm2AZYnK1SdG3dufPdCqk08sOahUBP&index=2
+      - https://www.youtube.com/watch?v=MlElVQffEts&list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As&index=36
+      - lsblk
+      - ssh
+  - Self-dev:
+      - https://web.evanchen.cc/FAQs/raqs.html
+      - https://techtv.mit.edu/collections/mathprizeforgirls/videos/32759-math-prize-for-girls-ceremony-part-2
+      - https://paulgraham.com/hs.html → !!!
+      - https://usamo.wordpress.com/2018/01/05/lessons-from-math-olympiads/
+      - https://usamo.wordpress.com/2019/01/31/math-contest-platitudes-v3/
+      - https://darren-yao.gitbook.io/darren-s-blog/usaco-faq#what-should-i-use-to-keep-track-of-which-usaco-problems-ive-done
+      - The Four Agreements: A Practical Guide to Personal Freedom, A Toltec Wisdom Book
+- Anime:
+  - https://gogoanime.ai/ao-haru-ride-unwritten-episode-1 → diesen Anime auf die to-Watch-list
+  - https://gogoanime.ai/vampire-knight-episode-1 → auf to Watch-list
+  - Schreibe noch Noragami auf die Watched list
+  - https://www.youtube.com/watch?v=FCStoMO2e3g
+  - https://www.youtube.com/watch?v=mCHxB8we0CE
+  - https://www.youtube.com/watch?v=GZlc5JAtr4of
+  - gakkou gurashi → auf die To-Watch-list
+  - http://www.vn-meido.com/k1/index.php?topic=1807.0
+  - Shuumatsu Nani Shitemasu ka? Isogashii desu ka? Sukutte Moratte Ii desu ka? → watched
+    
+- Wirtschaft:
+  - https://www.value-akademie.com/fundamentalanalyse/ → zum kurz gucken
+  - https://www.value-akademie.com/innerer-wert-was-ist-der-faire-wert-einer-aktie/  → zuende machen
+  - https://www.value-akademie.com/die-besten-aktien-finden/ 
+  - https://www.value-akademie.com/aktien-fuer-anfaenger-10-zeichen-von-value/ 
+  - https://www.ionos.de/startupguide/unternehmensfuehrung/guv-rechnung/ 
+  - https://www.godmode-trader.de/know-how/faustformel-so-bewerten-sie-jede-aktie-richtig,4543944 
+  - http://www.kredit-vergleich-news.de/innerer-wert-aktie/ 
+  - https://www.value-akademie.com/margin-of-safety-so-investierst-du-mit-sicherheitsmarge/ 
+  - https://www.youtube.com/watch?v=Mr9BIMrwBPI → überprüfung
+  - https://www.unternehmer-radio.de/die-unternehmensbewertung-an-einem-beispiel-erklaert/# 
+  - https://www.tech-corporatefinance.de/blog/unternehmensbewertung/discounted-cash-flow-verfahren-dcf-methode/  → DCF
+  - https://www.finanzsenf.de/fair-value-verfahren/  → mehr fair value Verfahren 
+  - http://www.meermeier.de/leistungen/gutachten/unternehmensbewertung/kapitalisierungszinssatz.html 
+  - https://www.investopedia.com/articles/basics/12/intrinsic-value.asp 
+  - https://www.wikihow.com/Calculate-Intrinsic-Value 
+  - https://www.minussinus.de/2017/11/13/bewerten-mit-dem-kurs-buchwert-verhaeltnis/ 
