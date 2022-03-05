@@ -192,10 +192,13 @@ export apps='/home/mike0609king/Apps'
 #############################
 #         Programs          #
 #############################
-alias tmux='tmux -u' 	# so that the characters doesn't look weird
-alias vim=$vimPath # loading rc files correctly
+alias tmux='tmux -u' 	                            # so that the characters doesn't look weird
+
+# from now on only nvim gets used!!
+alias vim=$nvimPath # loading rc files correctly
 alias nvim=$nvimPath # loading rc files correctly
-alias mvim=$vimPath
+alias mvim=$nvimPath
+
 export CALCURSE_EDITOR=$vimPath
 alias mon2cam='deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts'
 alias Discord='$apps/Discord/Discord'
@@ -208,3 +211,5 @@ alias calcurse='calcurse -D ~/.config/calcurse'
 alias clang11='clang -Wall -std=c11 -lm'
 alias clang11Mem='clang -Wall -std=c11 -fsanitize=memory -lm'
 alias clang11Addr='clang -Wall -std=c11 -fsanitize=address -lm'
+
+alias f='source ranger'

@@ -34,7 +34,7 @@ set $outer_gaps 0
 set $term --no-startup-id alacritty
 
 # background 
-set $bg "/home/mike0609king/Pictures/Wallpapers/Little Anime Girl (1).png"
+set $bg "/home/mike0609king/Pictures/Wallpapers/kanna.png"
 
 ####################################################################
 ####                  Some "Basic" Initialisations              ####

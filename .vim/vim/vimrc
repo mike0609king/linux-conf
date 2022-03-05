@@ -37,20 +37,20 @@ set noswapfile " no swap file is going to get created
 " On pressing tab, insert 2 spaces
 set expandtab
 " show existing tab with 2 spaces width
-set tabstop=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
 " when indenting with '>', use 2 spaces width
-set shiftwidth=2
+set shiftwidth=4
 
 " my universal mapping
 nnoremap ,unfold :set foldlevel=100<cr>	
 nnoremap ,all ggvg
 nnoremap ,clear ggVGx
 nnoremap ,ecmd :!clear<cr>
+nnoremap ,copy ggVGy
 nnoremap <leader>h :wincmd h<cr> 		" switch windows 
 nnoremap <leader>j :wincmd j<cr> 		" switch windows
 nnoremap <leader>k :wincmd k<cr> 		" switch windows
-
 nnoremap <leader>l :wincmd l<cr> 		" switch windows 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -90,7 +90,7 @@ inoremap \"O Ö
 inoremap \"U Ü
 inoremap \"A Ä
 
-source ~/.vim/vim/myModules/buffers.vim
+source ~/.vim/vim/myModules/buffersAndTabs.vim
 
 source ~/.vim/vim/myModules/python.vim
 source ~/.vim/vim/myModules/cpp.vim
