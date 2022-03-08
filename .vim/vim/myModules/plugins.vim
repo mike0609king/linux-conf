@@ -5,7 +5,6 @@ Plug 'neoclide/coc.nvim',{'branch':'release'}
 Plug 'vim-latex/vim-latex'
 Plug 'alvan/vim-closetag'
 
-
 " file managing
 Plug 'kevinhwang91/rnvimr'
 Plug 'preservim/nerdtree'
@@ -30,24 +29,25 @@ call plug#end()
 " remove: CocUninstall <extention-name>
 " CocInstall coc-pyright
 "\ 'coc-python',
+"\ 'coc-vimtex',
 " ################################################
-  "\ 'coc-vimtex',
 
 let g:coc_global_extensions = [
-	\ 'coc-pairs',
-	\ 'coc-eslint',
-	\ 'coc-json',
-  \ 'coc-python',
-  \ 'coc-html',
-  \ 'coc-css',
-  \ 'coc-cssmodules',
-  \ 'coc-tsserver'
-	\]
+    \ 'coc-pairs',
+    \ 'coc-eslint',
+    \ 'coc-json',
+    \ 'coc-python',
+    \ 'coc-html',
+    \ 'coc-css',
+    \ 'coc-cssmodules',
+    \ 'coc-tsserver',
+    \]
 
 " coc-pairs
 "
 let b:coc_pairs_disabled = ['<']
 autocmd FileType tex let b:coc_pairs = [["$", "$"], ["(", ")"], ["[", "]"], ["{", "}"]]
+set runtimepath+=~/.vim/plugged/coc.nvim/plugin/coc.vim
 
 " completely disable coc for certain files
 " autocmd filetype cpp set runtimepath-=~/.vim/plugged/coc.nvim
@@ -123,8 +123,8 @@ let g:closetag_regions = {
 " ################################################
 " #          color scheme configurations         #
 " ################################################
-colorscheme gruvbox
-let g:gruvbox_guisp_fallback="bg"
+"colorscheme gruvbox
+"let g:gruvbox_guisp_fallback="bg"
 set background=dark
 
 " ################################################
