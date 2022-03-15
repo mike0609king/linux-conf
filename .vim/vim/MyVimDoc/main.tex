@@ -1,0 +1,49 @@
+\documentclass[xcolor=x11names,table]{article}
+
+\usepackage{myDefaultPackageSetup/ArtRepBook/myDefaultsArtRepBook}
+
+\title{(n)vim My Configurations}
+\author{Mike Mengjie Huang}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{What this document will cover}%
+\label{sec:What this document will cover}
+This document is supposed to cover some additional features, shortcuts and plugins
+that I implemented. This is supposed to document some very important 
+self-made and ``vim-made'' features that I don't want to forget about. Additionally
+I will document some vim related things such as how includings in tex are used 
+(and more).
+\section{Additional Features}%
+\label{sec:Additional Features}
+\begin{multicols}{2}
+\subsection{Navigation in Vim}%
+\label{sub:Navigation in Vim}
+\begin{itemize}
+    \item Searching for file in subdirectory: \verb!<Ctl>p! and then search \item Browsing files with ranger: \verb!<Ctrl>n!
+    \item Searching with NerdTree: \verb!<Space>n!
+\end{itemize}
+\subsection{Buffers}%
+\label{sub:Buffers}
+\begin{itemize}
+    \item Look at buffers: \verb!:buffers! or \verb!<Ctrl>b!
+    \item Opening buffer vertical: \verb!:vert sb<idx>!
+    \item Opening buffer horizontally: \verb!sb<idx>!
+    \item Delete buffer: \verb!<Space><Enter>!
+\end{itemize}
+\end{multicols}
+\vspace{-5ex}
+\subsection{Tabs and Tab-Navigation}%
+\label{sub:Tabs and Tab-Navigation}
+\vspace{-2ex}
+\begin{multicols}{2}
+\begin{itemize}
+    \item Open tab: Use \verb!:tabedit! or \verb!<Space>t!
+    \item Previous tab: \verb!gT! or \verb!<Space>,!
+    \item Next tab: \verb!gt! or \verb!<Space>.!
+    \item Go to a numbered tab: \verb!<idx>gt!
+\end{itemize}
+\end{multicols}
+\end{document}

@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim',{'branch':'release'}
 Plug 'vim-latex/vim-latex'
 Plug 'alvan/vim-closetag'
+Plug 'davidhalter/jedi-vim'                                         " I use it in addition to coc because I like the documentation opening better
 
 " file managing
 Plug 'kevinhwang91/rnvimr'
@@ -57,6 +58,9 @@ set runtimepath+=~/.vim/plugged/coc.nvim/plugin/coc.vim
 " coc-<language> --> completion
 "
 " use <tab> for trigger completion and navigate to the next complete item
+
+" disable for cpp
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
@@ -123,8 +127,8 @@ let g:closetag_regions = {
 " ################################################
 " #          color scheme configurations         #
 " ################################################
-"colorscheme gruvbox
-"let g:gruvbox_guisp_fallback="bg"
+colorscheme gruvbox
+let g:gruvbox_guisp_fallback="bg"
 set background=dark
 
 " ################################################

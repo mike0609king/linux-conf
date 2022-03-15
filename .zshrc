@@ -126,6 +126,10 @@ bindkey '^e' edit-command-line
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Google Chrome executable setting
+CHROME_EXECUTABLE=/usr/bin/chromium
+export CHROME_EXECUTABLE
+
 # getting utf-8 (languague environment)
 export LANG="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
