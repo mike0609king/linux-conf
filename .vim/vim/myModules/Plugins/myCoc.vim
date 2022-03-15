@@ -15,6 +15,7 @@ let g:coc_global_extensions = [
     \ 'coc-css',
     \ 'coc-cssmodules',
     \ 'coc-tsserver',
+    \ 'coc-flutter',
     \]
 
 " coc-pairs

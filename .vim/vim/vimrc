@@ -102,8 +102,10 @@ source $modulePath/tex.vim
 source $modulePath/sh.vim
 source $modulePath/note.vim
 source $modulePath/calcurse.vim
+source $modulePath/markdown.vim
 
 source $pluginsPath/plugins.vim
+
 
 " transparency
 hi Normal guibg=NONE ctermbg=NONE

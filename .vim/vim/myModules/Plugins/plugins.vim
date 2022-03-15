@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim',{'branch':'release'}
 Plug 'vim-latex/vim-latex'
 Plug 'alvan/vim-closetag'
-Plug 'davidhalter/jedi-vim'                                         " I use it in addition to coc because I like the documentation opening better
+ Plug 'dart-lang/dart-vim-plugin'                   " Dart Syntax highlighting
 
 " file managing
 Plug 'kevinhwang91/rnvimr'
