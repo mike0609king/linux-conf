@@ -90,17 +90,20 @@ inoremap \"O Ö
 inoremap \"U Ü
 inoremap \"A Ä
 
-source ~/.vim/vim/myModules/buffersAndTabs.vim
+let $modulePath='~/.vim/vim/myModules'
+let $pluginsPath='$modulePath/Plugins'
 
-source ~/.vim/vim/myModules/python.vim
-source ~/.vim/vim/myModules/cpp.vim
-source ~/.vim/vim/myModules/c.vim
-source ~/.vim/vim/myModules/tex.vim
-source ~/.vim/vim/myModules/sh.vim
-source ~/.vim/vim/myModules/note.vim
-source ~/.vim/vim/myModules/calcurse.vim
+source $modulePath/buffersAndTabs.vim
 
-source ~/.vim/vim/myModules/plugins.vim
+source $modulePath/python.vim
+source $modulePath/cpp.vim
+source $modulePath/c.vim
+source $modulePath/tex.vim
+source $modulePath/sh.vim
+source $modulePath/note.vim
+source $modulePath/calcurse.vim
+
+source $pluginsPath/plugins.vim
 
 " transparency
 hi Normal guibg=NONE ctermbg=NONE

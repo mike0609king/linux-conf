@@ -20,7 +20,7 @@ tmux send-key -t "$PlanAndLog" \
 tmux new-window -t "$doc" -n 'doc'
 tmux send-key -t "$doc" \
 "cd /media/sf_e/LearningAndDoc/GelernteSachenDoc/Informatik/Programmiersprachen/Dart/Documentation" C-m \
-"clear" C-m \ 
+"clear" C-m \
 "vim 'My Dart Documentation.tex'" C-m
 
 # Attach to session
