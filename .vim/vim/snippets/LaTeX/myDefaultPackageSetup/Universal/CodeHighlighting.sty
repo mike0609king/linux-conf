@@ -130,3 +130,36 @@
 \newcommand\pseudoexternalNoFrame[2][]{\pseudostyleNoFrame\lstinputlisting[#1]{#2}}
 % Pseudo for inline: \pseudoinline{<code>} (no Frame by default)
 \let\pseudoinlineNoFrame\pseudoinline
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dart style for highlighting
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define the code emph rules
+\newcommand\dartstyle{%
+\defaultstyle\lstset{%
+	language=dart,%
+	frame=single,%
+	stringstyle=\color{deepgreen},%
+	otherkeywords={%
+  % Types
+  final,const,int,List,var,String,%
+  %Functions
+  },
+  }%
+}
+
+% Dart environment
+\lstnewenvironment{dart}[1][]{\dartstyle\lstset{#1}}{}
+% Dart for external files
+\newcommand\dartexternal[2][]{\begin{center}\dartstyle\lstinputlisting[#1]{#2}\end{center}}
+% Dart for inline (No Frame by default)
+\newcommand\dartinline[1]{\dartstyle\lstinline!#1!}
+
+%%%%%%% No Frame Version %%%%%%%
+\newcommand\dartstyleNoFrame{\dartstyle\lstset{frame=none}}
+% Dart environment
+\lstnewenvironment{dartNoFrame}[1][]{\dartstyleNoFrame\lstset{#1}}{}
+% Dart for external files
+\newcommand\dartexternalNoFrame[2][]{\dartstyleNoFrame\lstinputlisting[#1]{#2}}
+% Dart for inline (No Frame by default)
+\let\dartinlineNoFrame\dartinline

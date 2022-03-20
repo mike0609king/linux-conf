@@ -19,5 +19,5 @@ autocmd filetype tex set spell spelllang=en_us
 " autocmd filetype tex inoremap \"U Ü
 " autocmd filetype tex inoremap \"A Ä
 " Latex snippets mappings
-autocmd filetype tex nnoremap ,main :-1read $HOME/.vim/vim/snippets/LaTeX/main.tex <bar> :!cp -r /home/mike0609king/.vim/vim/snippets/LaTeX/myDefaultPackageSetup/ . && chmod -R +w myDefaultPackageSetup<cr><cr>
-autocmd filetype tex nnoremap ,bmain :-1read $HOME/.vim/vim/snippets/LaTeX/bmain.tex <bar> :!cp -r /home/mike0609king/.vim/vim/snippets/LaTeX/myDefaultPackageSetup/ . && chmod -R +w myDefaultPackageSetup<cr><cr>
+autocmd filetype tex nnoremap ,main :-1read $HOME/.vim/vim/snippets/LaTeX/main.tex <bar> :!cp -r /home/mike0609king/.vim/vim/snippets/LaTeX/myDefaultPackageSetup/ . && chmod -R +w myDefaultPackageSetup && mkdir includings && chmod -R +w includings<cr><cr>
+autocmd filetype tex nnoremap ,bmain :-1read $HOME/.vim/vim/snippets/LaTeX/bmain.tex <bar> :!cp -r /home/mike0609king/.vim/vim/snippets/LaTeX/myDefaultPackageSetup/ . && chmod -R +w myDefaultPackageSetup && mkdir includings && chmod -R +w includings<cr><cr>
