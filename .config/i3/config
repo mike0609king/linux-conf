@@ -266,8 +266,8 @@ mode $mode3 {
   bindsym Return exec $term
   # start discord
   bindsym d exec /home/mike0609king/Apps/Discord/Discord
-  # start chromium
-  bindsym c exec chromium
+  # start google chrome 
+  bindsym c exec google-chrome-stable
   # start bazecor
   bindsym b exec /media/mike0609king/DATA/Apps/Bazecor/Bazecor
   # start file manager GUI

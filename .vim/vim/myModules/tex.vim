@@ -9,7 +9,7 @@ autocmd filetype tex nnoremap <F5> :w<bar>:b1<bar>:!pdflatex "%"<cr>:b#<cr>
 autocmd filetype tex nnoremap <F4> :w<bar>:b1<bar>:!pdflatex "%"<cr>:b#<cr>
 autocmd filetype tex nnoremap ,open :!zathura "%:r".pdf &<cr>
 autocmd filetype tex set spell
-autocmd filetype tex set spell spelllang=en_us
+autocmd filetype tex set spell spelllang=en_us,de
 " mapping special characters
 " autocmd filetype tex inoremap \"o ö
 " autocmd filetype tex inoremap \"u ü

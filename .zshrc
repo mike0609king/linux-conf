@@ -17,6 +17,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # If you come from bash you might have to change your $PATH.
 export PATH=/$HOME/.local/bin:/home/mike0609king/Apps:$HOME/bin:/usr/local/bin:$PATH
+# path for dart !!! remove if you don't have anylonger
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Path to your oh-my-zsh installation.
 # export ZSH="/home/mike0609king/.oh-my-zsh"
