@@ -64,7 +64,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " toggle diagnostics
-nnoremap <silent> [d :call <SID>CocAction('diagnosticToggle')<CR>
+nnoremap <silent> [d :call CocAction('diagnosticToggle')<CR>
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
