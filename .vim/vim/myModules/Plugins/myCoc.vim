@@ -33,8 +33,6 @@ set runtimepath+=~/.vim/plugged/coc.nvim/plugin/coc.vim
 "
 " use <tab> for trigger completion and navigate to the next complete item
 
-" disable for cpp
-
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
@@ -65,3 +63,13 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" toggle diagnostics
+nnoremap <silent> [d :call <SID>CocAction('diagnosticToggle')<CR>
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
