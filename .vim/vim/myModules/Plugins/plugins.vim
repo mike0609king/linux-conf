@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim',{'branch':'release'}
 Plug 'vim-latex/vim-latex'
 Plug 'alvan/vim-closetag'
- Plug 'dart-lang/dart-vim-plugin'                   " Dart Syntax highlighting
+Plug 'dart-lang/dart-vim-plugin'                   " Dart Syntax highlighting
 
 " file managing
 Plug 'kevinhwang91/rnvimr'
@@ -18,6 +18,8 @@ Plug 'SirVer/ultisnips'
 " Looks of vim
 Plug 'morhetz/gruvbox'
 Plug 'ap/vim-css-color' " display colors
+
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
