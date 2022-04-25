@@ -34,7 +34,7 @@ set $outer_gaps 0
 set $term --no-startup-id alacritty
 
 # background 
-set $bg "/home/mike0609king/Pictures/Wallpapers/kanna.png"
+set $bg "/home/mike0609king/Pictures/Wallpapers/violet_evergarden_1.jpg"
 
 ####################################################################
 ####                  Some "Basic" Initialisations              ####
@@ -274,6 +274,8 @@ mode $mode3 {
   bindsym $mod+e exec thunar
   # start Settings
   bindsym $mod+i exec gnome-control-center
+  # start intelliJ IDEA
+  bindsym 1 exec /home/mike0609king/Apps/IDEA/bin/idea.sh
   
   # Transition to other modes
 	bindsym Escape mode "default"
