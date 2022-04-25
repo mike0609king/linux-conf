@@ -99,6 +99,7 @@ source $modulePath/buffersAndTabs.vim
 source $modulePath/python.vim
 source $modulePath/cpp.vim
 source $modulePath/c.vim
+source $modulePath/java.vim
 source $modulePath/tex.vim
 source $modulePath/sh.vim
 source $modulePath/note.vim
